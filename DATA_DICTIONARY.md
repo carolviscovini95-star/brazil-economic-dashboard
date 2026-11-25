@@ -1,0 +1,14 @@
+# Data dictionary
+
+All observations are national estimates or rates for Brazil. The long-format CSV stores one row per indicator and reference date. `indicator` is the series key, `date` is an ISO 8601 reference-period endpoint, and `value` is the numeric official observation in the unit below. A reference date is distinct from the release date and retrieval timestamp.
+
+| CSV key | Definition | Unit | Frequency and date convention | Official source and selectors | Transformations and coverage |
+|---|---|---|---|---|---|
+| inflation | IPCA cumulative change over the preceding 12 months | Percent | Monthly, month end | [IBGE SIDRA 1737](https://sidra.ibge.gov.br/tabela/1737), variable 2265 | Uses the published cumulative percentage, starting January 2012. |
+| gdp | GDP at market prices, quarterly volume growth against the same quarter one year earlier | Percent YoY | Quarterly, quarter end | [IBGE SIDRA 5932](https://sidra.ibge.gov.br/tabela/5932), variable 6561, sector classification 11255 category 90707 | Uses the official volume growth rate, starting Q1 2012. Historical GDP values are subject to revisions. |
+| selic | Copom’s target for the Selic policy rate | Percent per year | Daily, official observation date | [BCB SGS 432](https://dadosabertos.bcb.gov.br/dataset/432-taxa-de-juros---meta-selic-definida-pelo-copom) | Already annualized. Uses published dates from January 2012 onward. |
+| unemployment | Share of the labor force aged 14 or older that is unemployed | Percent | Monthly release for a rolling three-month period, dated to the last month | [IBGE SIDRA 6381](https://sidra.ibge.gov.br/tabela/6381), variable 4099 | Official rolling estimate. Earliest period is January–March 2012. Consecutive observations share two reference months. |
+| exchange | Daily US dollar selling quote | BRL per USD | Trading days, official quote date | [BCB SGS 1](https://dadosabertos.bcb.gov.br/dataset/1-taxa-de-cambio---livre---dolar-americano-venda---diario) | Uses the published quote. Higher values indicate real depreciation. First quote in scope is January 2, 2012. |
+| education | Average years of schooling for people aged 25 and older | Years | Annual, dated December 31 for storage | [IBGE SIDRA 7126](https://sidra.ibge.gov.br/tabela/7126), variable 3593, sex classification 2 category 6794, age classification 58 category 108866 | Uses the official PNAD Contínua estimate. Coverage starts in 2016 and the verified snapshot has no 2020 or 2021 rows. Annual observations are shown as points. |
+
+Period endpoints are display and filtering conventions. The app keeps each series at its native frequency and performs no resampling, date alignment, forward filling, or interpolation. Chart lines connect published points for visual continuity. The Selic line uses a step shape to display policy-rate changes. KPI differences are arithmetic changes against the preceding published observation in percentage points, years, or BRL per USD.

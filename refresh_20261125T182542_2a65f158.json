@@ -1,0 +1,67 @@
+{
+  "started_at": "2026-11-25T18:25:42.116355-03:00",
+  "completed_at": "2026-11-25T18:26:10.653655-03:00",
+  "timezone": "America/Sao_Paulo",
+  "status": "success",
+  "indicators": {
+    "inflation": {
+      "source": "IBGE",
+      "urls": [
+        "https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/2265/p/all"
+      ],
+      "observations": 178,
+      "latest": "2026-10-31",
+      "validation": "Passed: coverage, dates, unique keys, finite values, and bounds"
+    },
+    "gdp": {
+      "source": "IBGE",
+      "urls": [
+        "https://apisidra.ibge.gov.br/values/t/5932/n1/all/v/6561/p/all/c11255/90707"
+      ],
+      "observations": 58,
+      "latest": "2026-06-30",
+      "validation": "Passed: coverage, dates, unique keys, finite values, and bounds"
+    },
+    "selic": {
+      "source": "Banco Central do Brasil",
+      "urls": [
+        "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01/01/2012&dataFinal=31/12/2016",
+        "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01/01/2017&dataFinal=31/12/2021",
+        "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01/01/2022&dataFinal=25/11/2026"
+      ],
+      "observations": 5443,
+      "latest": "2026-11-25",
+      "validation": "Passed: coverage, dates, unique keys, finite values, and bounds"
+    },
+    "unemployment": {
+      "source": "IBGE",
+      "urls": [
+        "https://apisidra.ibge.gov.br/values/t/6381/n1/all/v/4099/p/all"
+      ],
+      "observations": 175,
+      "latest": "2026-09-30",
+      "validation": "Passed: coverage, dates, unique keys, finite values, and bounds"
+    },
+    "exchange": {
+      "source": "Banco Central do Brasil",
+      "urls": [
+        "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01/01/2012&dataFinal=31/12/2016",
+        "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01/01/2017&dataFinal=31/12/2021",
+        "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01/01/2022&dataFinal=25/11/2026"
+      ],
+      "observations": 3741,
+      "latest": "2026-11-25",
+      "validation": "Passed: coverage, dates, unique keys, finite values, and bounds"
+    },
+    "education": {
+      "source": "IBGE",
+      "urls": [
+        "https://apisidra.ibge.gov.br/values/t/7126/n1/all/v/3593/p/all/c2/6794/c58/108866"
+      ],
+      "observations": 8,
+      "latest": "2025-12-31",
+      "validation": "Passed: coverage, dates, unique keys, finite values, and bounds"
+    }
+  },
+  "active_snapshot": "data/snapshots/e048341bb6ccaf23b6b9.csv"
+}
