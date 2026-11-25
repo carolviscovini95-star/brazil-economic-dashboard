@@ -1,8 +1,8 @@
 {
   "snapshot": "data/snapshots/e048341bb6ccaf23b6b9.csv",
   "last_attempt": {
-    "started_at": "2026-11-25T19:14:31.026366-03:00",
-    "completed_at": "2026-11-25T19:14:42.818895-03:00",
+    "started_at": "2026-11-25T19:15:16.368898-03:00",
+    "completed_at": "2026-11-25T19:15:18.194381-03:00",
     "timezone": "America/Sao_Paulo",
     "status": "success",
     "indicators": {
@@ -67,6 +67,6 @@
     },
     "active_snapshot": "data/snapshots/e048341bb6ccaf23b6b9.csv"
   },
-  "last_attempt_log": "verification/refresh_20261125T191431_763e1a76.json",
-  "last_successful_refresh": "2026-11-25T19:14:42.818895-03:00"
+  "last_attempt_log": "verification/refresh_20261125T191516_8aed63ce.json",
+  "last_successful_refresh": "2026-11-25T19:15:18.194381-03:00"
 }
