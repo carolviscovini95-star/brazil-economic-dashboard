@@ -1,8 +1,8 @@
 {
-  "snapshot": "data/snapshots/d491c6bc61e1a21478dd.csv",
+  "snapshot": "data/snapshots/62a9f40a62d3744a1281.csv",
   "last_attempt": {
-    "started_at": "2026-11-26T17:02:36.773756-03:00",
-    "completed_at": "2026-11-26T17:03:15.291506-03:00",
+    "started_at": "2026-11-27T16:51:21.220378-03:00",
+    "completed_at": "2026-11-27T16:51:48.168778-03:00",
     "timezone": "America/Sao_Paulo",
     "status": "success",
     "indicators": {
@@ -29,10 +29,10 @@
         "urls": [
           "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01/01/2012&dataFinal=31/12/2016",
           "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01/01/2017&dataFinal=31/12/2021",
-          "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01/01/2022&dataFinal=26/11/2026"
+          "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01/01/2022&dataFinal=27/11/2026"
         ],
-        "observations": 5444,
-        "latest": "2026-11-26",
+        "observations": 5445,
+        "latest": "2026-11-27",
         "validation": "Passed: coverage, dates, unique keys, finite values, and bounds"
       },
       "unemployment": {
@@ -40,8 +40,8 @@
         "urls": [
           "https://apisidra.ibge.gov.br/values/t/6381/n1/all/v/4099/p/all"
         ],
-        "observations": 175,
-        "latest": "2026-09-30",
+        "observations": 176,
+        "latest": "2026-10-31",
         "validation": "Passed: coverage, dates, unique keys, finite values, and bounds"
       },
       "exchange": {
@@ -49,10 +49,10 @@
         "urls": [
           "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01/01/2012&dataFinal=31/12/2016",
           "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01/01/2017&dataFinal=31/12/2021",
-          "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01/01/2022&dataFinal=26/11/2026"
+          "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01/01/2022&dataFinal=27/11/2026"
         ],
-        "observations": 3742,
-        "latest": "2026-11-26",
+        "observations": 3743,
+        "latest": "2026-11-27",
         "validation": "Passed: coverage, dates, unique keys, finite values, and bounds"
       },
       "education": {
@@ -65,8 +65,8 @@
         "validation": "Passed: coverage, dates, unique keys, finite values, and bounds"
       }
     },
-    "active_snapshot": "data/snapshots/d491c6bc61e1a21478dd.csv"
+    "active_snapshot": "data/snapshots/62a9f40a62d3744a1281.csv"
   },
-  "last_attempt_log": "verification/refresh_20261126T170236_8673aed3.json",
-  "last_successful_refresh": "2026-11-26T17:03:15.291506-03:00"
+  "last_attempt_log": "verification/refresh_20261127T165121_cf177c79.json",
+  "last_successful_refresh": "2026-11-27T16:51:48.168778-03:00"
 }
